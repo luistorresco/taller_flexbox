@@ -1,0 +1,23 @@
+.padre{
+    /* flex-flow: row wrap; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+    border: 1px solid;
+   align-content: stretch;
+
+}
+.diseno_hijo{
+    height: 100px;
+    width: 200px;
+}
+.hijo1{
+
+}
+
+img{
+    height: 400px;
+    width: 400px;
+}
