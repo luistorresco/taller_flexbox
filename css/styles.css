@@ -1,65 +1,74 @@
-    .contenedor-padre {
-        display: flex;
-        flex-wrap: wrap;
-        /* flex-flow: row wrap; */
-        /* justify-content: center; */
-        /* align-content: center; */        
-      }
-      
-      .columna-izquierda {
-        flex: 1;
-        background-color: #ddd;
-        padding: 10px;
-      }
-      
-      .columna-derecha {
-        flex: 2;
-        padding: 20px;
-      }
-      
-      .grid-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-        /* grid-auto-rows: minmax(150px, auto); */
-        gap: 10px;
-      }
-      
-      .grid-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+.contenedor-padre {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  background-color: #ddd;
+  /* flex-flow: row wrap; */
+}
 
-      .padre_nav{
-        display: flex;
-        justify-content:space-around;
-        align-items:stretch;
-        flex-grow: 1;
-        
-      }
+.columna-izquierda {
+  flex: 1;
+  background-color: #ddd;
+  padding: 10px;
+}
 
-      .logo img {
-        height:150px ;
-        width:150px ;
-      }
+.columna-derecha {
+  flex: 2;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-rows: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 10px;
+}
+
+.grid-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.padre_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #ddd;
   
-.logo{
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+}
+
+.logo {
   align-items: ;
 }
 
-.menu {
-height: 100%;
-display: flex;
-        background-color: #0d2717;
-        border-radius: 2rem;
-    }
-    .menu a {
-        text-decoration: none;
-        font-size: 2rem;
-        color: white;
-    }
-    .menu  a:hover {
-        box-shadow: 0 0.3rem 0.9rem rgba(138, 193, 146, 0.548);
-    }
+.menu ul {
+  height: 100%;
+  display: flex;
+  background-color: #0d2717;
+  border-radius: 2rem;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+}
+.menu a:hover {
+  box-shadow: 0 0.3rem 0.9rem rgba(138, 193, 146, 0.548);
+}
+
